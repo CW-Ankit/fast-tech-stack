@@ -77,10 +77,3 @@ pnpm --filter @FastTechStack/backend auth:generate
 ## Deployment
 
 Use `DEPLOYMENT.md` for production deployment on Vercel, Convex, and Expo/EAS.
-
-## Additional Documentation
-
-- `docs/StackUsageGuide.md`
-- `docs/features/feature_MonorepoInitialization_2026-04-27_v1.0.0.md`
-- `docs/features/feature_DeploymentReadiness_2026-04-27_v1.0.0.md`
-- `docs/features/feature_BetterAuthDodoIntegration_2026-04-27_v1.0.0.md`
