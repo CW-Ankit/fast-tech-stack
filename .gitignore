@@ -1,0 +1,14 @@
+node_modules
+.pnpm-store
+.env
+.env.*
+!.env.example
+.next
+dist
+.expo
+.expo-shared
+coverage
+.DS_Store
+convex/.env.local
+apps/web/.env.local
+apps/mobile/.env

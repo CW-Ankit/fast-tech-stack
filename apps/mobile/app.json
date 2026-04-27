@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "FastTechStackMobile",
+    "slug": "fast-tech-stack-mobile",
+    "scheme": "fasttechstack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
