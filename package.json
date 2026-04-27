@@ -1,0 +1,19 @@
+{
+  "name": "FastTechStack",
+  "private": true,
+  "packageManager": "pnpm@10.18.1",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "FormatCheck": "turbo format:check",
+    "FormatWrite": "turbo format:write",
+    "Test": "turbo test"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.3",
+    "prettier": "^3.6.2"
+  }
+}
