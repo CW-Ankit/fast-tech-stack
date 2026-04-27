@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { PaymentActions } from "@/components/stack/PaymentActions";
 import { StackStatus } from "@/components/stack/StackStatus";
 import { Button } from "@/components/ui/Button";
 
@@ -21,13 +22,16 @@ const HomePage = () => {
         <Button asChild>
           <Link href="/api/auth/sign-in">Sign In with Better Auth</Link>
         </Button>
-        <Button asChild variant="secondary">
-          <Link href="/api/payments/checkout?productId=prod_test_123">Start Dodo Checkout</Link>
-        </Button>
         <Button asChild variant="outline">
           <Link href="/api/stack/status">Open Stack Status API</Link>
         </Button>
       </div>
+
+      <PaymentActions />
+
+      <p className="text-sm text-zinc-500">
+        Legacy fallback route remains available at `/api/payments/checkout`, but Better Auth Dodo plugin flow is preferred.
+      </p>
     </main>
   );
 };

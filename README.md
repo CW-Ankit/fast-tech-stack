@@ -7,7 +7,7 @@ A production-oriented monorepo starter built with Turborepo + pnpm using:
 - Convex (database + backend)
 - Better Auth (authentication)
 - Tailwind CSS + shadcn/ui style baseline
-- Dodo Payments (checkout integration)
+- Dodo Payments via Better Auth plugin
 
 ## Repository Structure
 
@@ -34,7 +34,7 @@ pnpm install
 
 - `apps/web/.env.local`
 - `apps/mobile/.env`
-- Convex environment variables via CLI (`BETTER_AUTH_SECRET`, `SITE_URL`, provider secrets)
+- Convex environment variables via CLI (`BETTER_AUTH_SECRET`, `SITE_URL`, `DODO_*` variables)
 
 3. Start local development:
 
@@ -56,16 +56,16 @@ pnpm test
 
 ### Web
 - Home page includes a `Stack Status` panel.
-- API health-style endpoint at `/api/stack/status`.
-- Checkout action using Dodo route: `/api/payments/checkout`.
+- Better Auth Dodo checkout button and customer portal button.
+- API status endpoint at `/api/stack/status`.
 
 ### Mobile
 - Expo home screen displays environment readiness values.
-- Quick links are provided to validate endpoint reachability and Dodo docs.
+- Quick links validate endpoint reachability and payment docs.
 
 ## Convex + Better Auth Setup Notes
 
-The backend package includes Convex + Better Auth integration scaffolding based on current integration docs.
+The backend package includes Convex + Better Auth integration scaffolding.
 
 After linking your Convex project, run:
 
@@ -83,3 +83,4 @@ Use `DEPLOYMENT.md` for production deployment on Vercel, Convex, and Expo/EAS.
 - `docs/StackUsageGuide.md`
 - `docs/features/feature_MonorepoInitialization_2026-04-27_v1.0.0.md`
 - `docs/features/feature_DeploymentReadiness_2026-04-27_v1.0.0.md`
+- `docs/features/feature_BetterAuthDodoIntegration_2026-04-27_v1.0.0.md`

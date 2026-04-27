@@ -1,5 +1,6 @@
 import { convexClient } from "@convex-dev/better-auth/client/plugins";
 import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
+import { dodopaymentsClient } from "@dodopayments/better-auth";
 import { createAuthClient } from "better-auth/react";
 import { ConvexReactClient } from "convex/react";
 import * as Linking from "expo-linking";
@@ -9,7 +10,7 @@ const ConvexClient = new ConvexReactClient(process.env.EXPO_PUBLIC_CONVEX_URL!);
 
 const AuthClient = createAuthClient({
   baseURL: process.env.EXPO_PUBLIC_CONVEX_SITE_URL,
-  plugins: [convexClient()],
+  plugins: [convexClient(), dodopaymentsClient()],
   fetchOptions: {
     customFetchImpl: fetch
   }
